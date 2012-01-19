@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>impress.js</title>
+
+    <meta name="description" content="impress.js is a presentation tool based on the power of css3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com.">
+    <meta name="author" content="bartek szopka" />
+
+    <link href="http://fonts.googleapis.com/css?family=open+sans:regular,semibold,italic,italicsemibold|pt+sans:400,700,400italic,700italic|pt+serif:400,700,400italic,700italic" rel="stylesheet" />
+
+	<link href="css/impress.css" rel="stylesheet" />
+</head>
+<body>
+<div id="impress" class="impress-not-supported">
+	
+<section>
+	<step>
+		<p style="font-size: 150px;">impress.js</p>
+		<p style="text-align: right;">@yoshimura_yuu</p>
+	</step>
+
+	<step>
+		<p>@yoshimura_yuu</p>
+		<p style="text-align: center;">やっぱりJavaScriptも書く。</p>
+	</step>
+</section>
+
+
+<section>
+	<step class="slide">
+		<p>従来のスライドは</p>
+	</step>
+
+	<step class="slide">
+		<p>文字列がスクロールしてゆく感じであった……。</p>
+	</step>
+
+	<step class="slide">
+		<p>そしてこのようにだらだらと文字列が増えて、
+		<b>ダダラダラダラダラダラダラダラダラダラダラダ
+			ラダラダラダラダラダラダラダラダラダラダラダ
+			ラダラダララダラダラダラダラダダラダラダラ
+			ダラダラダラダラダラダラダラダラダラダラダ
+			ラダラダラダラダラダラダラダラダラダラダラダラ
+			ダダラダラダラダラダラダラダラダラダラダラダラダラダラダラダラダラダラダラダラダラダラダラダラダラダ
+			ダラダラダラダラダラダラダラダラダラダラダラダラダラダラダラダラダラダラダラダラダラダラダラダラダラダラダラダラダラダラ
+			ラダラダラダラダラダラダラダラダラダラダラダラダラダ
+			ラダラダラダラダラダラダラダラダラダラダララダラダラダラダラダラダラダラダラダラダララ</b>としたしょうもないゴミクソスライドが生成されることも多々ある。</p>
+	</step>
+
+	<step>
+		<p style="text-align: center; font-size: 100px;">そこで、</p>
+	</step>
+</section>
+
+<section>
+	<step data-rotate="90">
+		<p style="font-size: 200px;">impress.js</p>
+	</step>
+
+	<step>
+		<p style="font-size: 100px;">What is</p>
+		<p style="font-size: 200px; text-align: center;">impress.js?</p>
+	</step>
+
+	<section>
+		<step>
+			<p style="font-size: 80px;">It's a </p>
+			<p style="text-align: center; font-size: 60px;"><b>Presentation Framework</b></p>
+			<p style="text-align: center;">based on<p>
+			<p style="text-align: center; font-size: 100px;">HTML & CSS3</p></p>
+			<p style="text-align: center;">by bartaz</p>
+		</step>
+
+		<section>
+			<step>
+				<p style="font-size: 60px;">HTMLでスライドを書ける！</p>
+			</step>
+
+			<step data-rotate="90">
+				<p>いい感じ（？）のアニメーションも出来る！</p>
+			</step>
+
+			<step>
+				<p style="text-align: center; font-size:100px;">が</p>
+			</step>
+
+			<step>
+			<img src="img2/1.png" width="1000">
+			</step>
+
+			<step>
+				<p>レイアウトをx, y座標などで指定しているので、
+				凄まじく煩雑になる！</p>
+				<p>DIVタグを使いまくるのは面倒！</p>
+			</step>
+
+			<step>
+				<p style="text-align: center; font-size: 100px;">そこで</p>
+			</p>
+		</section>
+	</section>
+</section>
+
+<section>
+	<step>
+		<p style="font-size: 60px;">ぼくのかんがえた</p>
+		<p style="font-size: 200px;">impress.js</p>
+		<p>https://github.com/yoshimuraYuu/impress.js</p>
+	</step>
+
+	<section>
+		<step>
+			<p>HTMLから<b>XML</b>ベースに。</p>
+			<p><b>階層を示すタグ</b>を用意し、位置や深さを自動計算。</p>
+		</step>
+
+		<step>
+			<img src="img2/2.png">
+		</step>
+
+		<step>
+			<p>&lt;section&gt;で構造を記述。</p>
+			<p>&lt;step&gt;でスライドになる。</p>
+		</step>
+			
+		<section>
+			<step>
+				<p>&lt;section&gt;を入れ子にすると、ズームする。</p>
+			</step>
+		</section>
+
+		<step>
+			<p>&lt;section&gt;を抜けると、ズームアウトする。</p>
+		</step>
+
+		<step>
+			<p>課題</p>
+
+			<ul>
+				<li>矢印が引けない。</li>
+				<li>対応ブラウザが少ない。</li>
+			</ul>
+		</step>
+
+		<step>
+			<p style="text-align: center; font-size: 100px;">そんなわけで</p>
+		</step>
+	</section>
+</section>
+
+<section>
+	<step>
+		<p style="font-size: 80px;">Why not try</p>
+		<p style="text-align: center; font-size: 200px;">impress.js?</p>
+	</step>
+
+	<step data-rotate="270">
+		<p>https://github.com/yoshimuraYuu/impress.js</p>
+	</step>
+
+	<step>
+		<p>JavaScriptをガシガシ書こう！という人募集！</p>	
+	</step>
+
+	<step id="overview" data-x="3000" data-y="2500" data-scale="8">
+	</step>
+</section>
+
+</div>
+<script src="js/impress.js"></script>
+</body>
+</html>

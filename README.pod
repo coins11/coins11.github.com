@@ -1,0 +1,49 @@
+=encoding utf8
+
+=head1 NAME
+
+impress.js --Automatic layout based on content structure--
+
+=head1 DESCRIPTION
+
+ <div id="impress" class="impress-not-supported">
+	
+ 	<section>
+ 		<step>
+			<p> ...... </p>
+ 		</step>
+ 
+		<section>
+			<step>
+				<p> ...... </p>
+			</step>
+
+			<step>
+				<p> ...... </p>
+			</step>
+			
+			<section>
+				<step>
+					<p> ...... </p>
+				</step>
+			</section>
+
+			<step>
+				<p> ...... </p>
+			</step>
+		</section>
+
+		<step>
+			<p> ...... </p>
+		</step>
+ 	</section>
+
+ </div>
+
+=head1 DEMO
+
+http://yoshimurayuu.github.com/impress.js/impress.html
+
+=head1 BROWSER SUPPORT
+
+It works on Chrome and Safari.
