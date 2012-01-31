@@ -99,7 +99,7 @@ a:hover {
 
 /* COMMON STEP STYLES */
 
-step {
+.step {
     width: 900px;
     padding: 400px;
 
@@ -117,7 +117,7 @@ step {
 
 /* fade out inactive slides */
 
-step {
+.step {
     -webkit-transition: opacity 1s;
     -moz-transition:    opacity 1s;
     -ms-transition:     opacity 1s;
@@ -125,7 +125,7 @@ step {
     transition:         opacity 1s;
 }
 
-step:not(.active) {
+.step:not(.active) {
     opacity: 0.1;
 }
 
