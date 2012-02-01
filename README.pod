@@ -7,43 +7,26 @@ impress.js --Automatic layout based on content structure--
 =head1 DESCRIPTION
 
  <div id="impress" class="impress-not-supported">
-	
- 	<section>
- 		<step>
-			<p> ...... </p>
- 		</step>
+ <section>
+     <h1>Future Perfect</h1>
+     ......
+     <section> 
+         <h1>Hypertext</h1>
+         ......
+     </section>
  
-		<section>
-			<step>
-				<p> ...... </p>
-			</step>
-
-			<step>
-				<p> ...... </p>
-			</step>
-			
-			<section>
-				<step>
-					<p> ...... </p>
-				</step>
-			</section>
-
-			<step>
-				<p> ...... </p>
-			</step>
-		</section>
-
-		<step>
-			<p> ...... </p>
-		</step>
- 	</section>
-
+     <section> 
+         <h1>Why a World Wide Web?</h1>  
+         ......
+     </section>
+     ......
+ </section>
  </div>
 
 =head1 DEMO
 
-http://yoshimurayuu.github.com/impress.js/impress.html
+http://yoshimurayuu.github.com/impress.js/test.html
 
 =head1 BROWSER SUPPORT
 
-It works on Chrome and Safari.
+It works on Chrome beta and Safari.
