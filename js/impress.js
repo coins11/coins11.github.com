@@ -139,6 +139,8 @@
     });
     css(canvas, props); 
     
+    // set depth of section structure
+
     (function sectionDepth ( section, depth ) {
         var children = arrayify(section.childNodes).filter(function ( child ) {
             return child.tagName == "SECTION";
@@ -161,8 +163,10 @@
 
         return depth;
     })(canvas);
-    
-    var setCSS = function ( s, position, depth ) {
+
+    // set transform data
+
+    var setTransform = function ( s, position, depth ) {
         var data = s.dataset,
             step = { 
                 translate: {
@@ -190,9 +194,11 @@
         });
     };
 
+    // append slide to parent section
+
     var appendSlide = function ( section, position, depth ) {
         var step = document.createElement("div");
-        step.className = "step slide";
+        step.className = "step";
 
         arrayify(section.childNodes).filter(function ( c ) {
             return c.nodeType == 1 && c.tagName != "SECTION";
@@ -200,30 +206,28 @@
             step.appendChild(section.removeChild(c));
         });
 
-        setCSS(step, position, depth);
+        setTransform(step, position, depth);
 
         section.insertBefore(step, section.firstChild);
     };
-        
-    (function placeSections ( canvas ) {
-        var position = {
-                x: 0,
-                y: 0
-            },
-            priviousDepth = Infinity;
-        
-        $$("section", canvas).forEach(function ( section ) {
-            if (section.depth == priviousDepth) {
-                position.y++;
-            } else if (section.depth > priviousDepth) {
-                position.x++;
-            }
-            
-            appendSlide(section, position, section.depth);
 
-            priviousDepth = section.depth;
-        });
-    })(canvas);
+    var priviousDepth = Infinity,
+        position = {
+            x: 0,
+            y: 0
+        };
+    
+    $$("section", canvas).forEach(function ( section ) {
+        if (section.depth == priviousDepth) {
+            position.y++;
+        } else if (section.depth > priviousDepth) {
+            position.x++;
+        }
+        
+        appendSlide(section, position, section.depth);
+
+        priviousDepth = section.depth;
+    });
 
     var steps = $$(".step", impress);
 

@@ -29,4 +29,4 @@ http://yoshimurayuu.github.com/impress.js/test.html
 
 =head1 BROWSER SUPPORT
 
-It works on Chrome beta and Safari.
+It works on Chrome.
