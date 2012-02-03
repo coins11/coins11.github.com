@@ -1,34 +1,11 @@
-# NAME
+# このリポジトリ
+これはcoins11のホームページようリポジトリです。
 
-structure.js --Automatic layout based on content structure--
+ついでにこのorganizationに対する意見などを募集するリポジトリにしたいです。
+このリポジトリのissueには、このリポジトリに対するissueの他に、
+なにかしらこのorganizationについての提案なども書けるようにしたいです。
 
-It is inspired by bartaz [impress.js](https://github.com/bartaz/impress.js).
-
-# DESCRIPTION
-
-```HTML
-<div id="structure">
-<section>
-    <h1>Future Perfect</h1>
-    ......
-    <section> 
-        <h1>Hypertext</h1>
-        ......
-    </section>
-
-    <section> 
-        <h1>Why a World Wide Web?</h1>  
-        ......
-    </section>
-    ......
-</section>
-</div>
-```
-
-# DEMO
-
-http://yoshimurayuu.github.com/structure.js/
-
-# BROWSER SUPPORT
-
-It works on Chrome and Firefox 10.
+# 編集するとき
+大規模な編集するときはいきなりガシガシ作業せず、
+**ブランチを切って**、なるべくみんなの同意を得てマージする感じにしましょう。
+ただし、しょうもない変更（誤字の訂正など）はこの限りではありません。
