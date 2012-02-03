@@ -1,8 +1,5 @@
 /**
- * impress.js
- *
- * impress.js is a presentation tool based on the power of CSS3 transforms and transitions
- * in modern browsers and inspired by the idea behind prezi.com.
+ * structure.js
  *
  * MIT Licensed.
  *
@@ -91,27 +88,27 @@
     // CHECK SUPPORT
     
     var ua = navigator.userAgent.toLowerCase();
-    var impressSupported = ( pfx("perspective") != null ) &&
+    var structureSupported = ( pfx("perspective") != null ) &&
                            ( ua.search(/(iphone)|(ipod)|(ipad)|(android)/) == -1 );
     
     // DOM ELEMENTS
     
-    var impress = byId("impress");
+    var structure = byId("structure");
     
-    if (!impressSupported) {
-        impress.className = "impress-not-supported";
+    if (!structureSupported) {
+        structure.className = "structure-not-supported";
         return;
     } else {
-        impress.className = "";
+        structure.className = "";
     }
     
     var canvas = document.createElement("div");
     canvas.className = "canvas";
     
-    arrayify( impress.childNodes ).forEach(function ( el ) {
+    arrayify( structure.childNodes ).forEach(function ( el ) {
         canvas.appendChild( el );
     });
-    impress.appendChild(canvas);
+    structure.appendChild(canvas);
     
     
     // SETUP
@@ -131,8 +128,8 @@
         transformStyle: "preserve-3d"
     };
     
-    css(impress, props);
-    css(impress, {
+    css(structure, props);
+    css(structure, {
         top: "50%",
         left: "50%",
         perspective: "1000px"
@@ -229,7 +226,7 @@
         priviousDepth = section.depth;
     });
 
-    var steps = $$(".step", impress);
+    var steps = $$(".step", structure);
 
     steps.forEach(function ( el, idx ) {
         if ( !el.id ) {
@@ -271,7 +268,7 @@
         }
         el.classList.add("active");
         
-        impress.className = "step-" + el.id;
+        structure.className = "step-" + el.id;
         
         // `#/step-id` is used instead of `#step-id` to prevent default browser
         // scrolling to element in hash
@@ -304,7 +301,7 @@
         // don't animate (set duration to 0)
         var duration = (active) ? "1s" : "0";
         
-        css(impress, {
+        css(structure, {
             // to keep the perspective look similar for different scales
             // we need to 'scale' the perspective, too
             perspective: step.scale * 1000 + "px",
